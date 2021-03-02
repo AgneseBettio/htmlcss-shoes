@@ -3,16 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 nav{
-    height: 50px;
-    width: 100%;
-    background-color: blue;
-    position: relative;
-}
+    width:100%;
+    position: fixed;
+    border-bottom: 1px solid black;
 
+}
+nav::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav ul {
+    float: right;
+    padding: 30px 20px 20px 0;
+}
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    background-color: white;
+}
+nav ul li .nav-btn{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #FBFBFB;
+}
+.nav-btn>.btn-number {
+    line-height: 30px;   
+    vertical-align: middle;
+    font-weight: bold;
 }
